@@ -1,10 +1,14 @@
 # TODO: Créer un script permettant le formattage du livre des records des JO.
 
 country = input("De quelle nationalité est l'athlète ? ")
-athlete = input("Quel est le nom l'athlète ? ")
-date = input("Quel est la date du record ? ")
-discipline = input("Quel est la discipline du record ? ")
-categorie = input("Quel est la catégorie du record ? ")
+athlete = input("Quel est son nom ? ")
+date = input("Date du record ? ")
+sport = input("Dans quelle discipline ? ")
+category = input("Dans une catégorie spécifique ? ")
 record = input("Quel est le record ? ")
 
-print("Nouveau Record : ", date, discipline, " - ", categorie, athlete, country, " - ", record )
+print("")
+print("Nouveau Record:")
+print("--------------------")
+print(f"{date} - {sport} - {category}:")
+print(f"\t{athlete} ({country}) - {record}" )
