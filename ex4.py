@@ -6,14 +6,14 @@
 battery_level = int(input(" What's the battery level ?"))
 resultat =0
 
-if battery_level > 50 : resultat = battery_level*2
+if battery_level > 50 : resultat += (battery_level-50)*2 ; battery_level -= battery_level-50
 
-elif battery_level > 25 : resultat = battery_level*0.5
+if battery_level > 25 : resultat += (battery_level-25)*0.5 ; battery_level -= battery_level-25
 
-elif battery_level > 10 : resultat = battery_level*0.1
+if battery_level > 10 : resultat += (battery_level-10)*1 ; battery_level -= battery_level-10
 
-elif battery_level > 5 : resultat = battery_level*2.5
+if battery_level > 5 : resultat += (battery_level-5)*2.5 ; battery_level -= battery_level-5
 
-elif battery_level > 0 : resultat = battery_level*6
+if battery_level > 0 : resultat += battery_level*6
 
 print(resultat, " km")
